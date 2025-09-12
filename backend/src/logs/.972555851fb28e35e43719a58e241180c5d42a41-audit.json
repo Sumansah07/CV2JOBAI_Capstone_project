@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "D:\\capstone projects\\backend\\src\\logs\\.972555851fb28e35e43719a58e241180c5d42a41-audit.json",
+    "files": [
+        {
+            "date": 1757690529454,
+            "name": "D:\\capstone projects\\backend\\src\\logs\\combined-2025-09-12.log",
+            "hash": "ca7e75c718910b505eae1b19f6adbb3424c405e71184aa9ea01a483d011dace4"
+        }
+    ],
+    "hashType": "sha256"
+}

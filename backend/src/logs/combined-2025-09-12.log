@@ -1,0 +1,7 @@
+{"level":"info","message":"Auth routes loaded","service":"ai-career-portal-backend","timestamp":"2025-09-12 20:56:50"}
+{"level":"info","message":"Users routes loaded","service":"ai-career-portal-backend","timestamp":"2025-09-12 20:56:51"}
+{"level":"info","message":"Resumes routes loaded","service":"ai-career-portal-backend","timestamp":"2025-09-12 20:56:52"}
+{"level":"info","message":"Jobs routes loaded","service":"ai-career-portal-backend","timestamp":"2025-09-12 20:56:53"}
+{"level":"info","message":"Applications routes loaded","service":"ai-career-portal-backend","timestamp":"2025-09-12 20:56:53"}
+{"level":"info","message":"Analytics routes loaded","service":"ai-career-portal-backend","timestamp":"2025-09-12 20:56:53"}
+{"level":"info","message":"Monitoring routes loaded","service":"ai-career-portal-backend","timestamp":"2025-09-12 20:56:53"}
