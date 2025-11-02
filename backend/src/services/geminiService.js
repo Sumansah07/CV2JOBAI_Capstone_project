@@ -1,19 +1,19 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
-class GeminiService {
-  constructor() {
-    this.genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    // Use the most commonly available model
-    this.model = this.genAI.getGenerativeModel({
-      model: 'gemini-1.5-flash',
-      generationConfig: {
-        temperature: 0.7,
-        topK: 40,
-        topP: 0.95,
-        maxOutputTokens: 8192,
-      }
-    });
-  }
+  class GeminiService {
+    constructor() {
+      this.genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+      // Use the most commonly available model
+      this.model = this.genAI.getGenerativeModel({
+        model: 'gemini-2.5-flash',
+        generationConfig: {
+          temperature: 0.7,
+          topK: 40,
+          topP: 0.95,
+          maxOutputTokens: 8192,
+        }
+      });
+    }
 
   async testConnection() {
     try {
@@ -26,7 +26,7 @@ class GeminiService {
       console.error('Gemini API test failed:', error);
 
       // Check for specific error types
-      if (error.message.includes('models/gemini-1.5-flash is not found')) {
+      if (error.message.includes('models/gemini-2.5-flash is not found')) {
         console.log('Trying alternative model: gemini-pro');
         try {
           this.model = this.genAI.getGenerativeModel({ model: 'gemini-pro' });

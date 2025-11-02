@@ -1,3 +1,4 @@
+// AI Career Portal Backend API
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -181,13 +182,17 @@ const startServer = async () => {
   const gracefulShutdown = (signal) => {
     logInfo(`Received ${signal}, starting graceful shutdown`);
     
-    server.close(() => {
+    server.close(async () => {
       logInfo('HTTP server closed');
       
-      mongoose.connection.close(() => {
+      try {
+        await mongoose.connection.close();
         logInfo('MongoDB connection closed');
         process.exit(0);
-      });
+      } catch (error) {
+        logError(error, { context: 'Error closing MongoDB connection' });
+        process.exit(1);
+      }
     });
     
     // Force close after 10 seconds

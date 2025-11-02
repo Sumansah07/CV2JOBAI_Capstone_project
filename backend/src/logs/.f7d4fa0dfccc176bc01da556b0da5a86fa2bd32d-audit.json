@@ -6,9 +6,9 @@
     "auditLog": "D:\\capstone projects\\backend\\src\\logs\\.f7d4fa0dfccc176bc01da556b0da5a86fa2bd32d-audit.json",
     "files": [
         {
-            "date": 1757690529447,
-            "name": "D:\\capstone projects\\backend\\src\\logs\\error-2025-09-12.log",
-            "hash": "8c60009980172855cb7f3be5a8a63e7ede45920a4d6536c711870a63d20d43d9"
+            "date": 1761364118906,
+            "name": "D:\\capstone projects\\backend\\src\\logs\\error-2025-10-25.log",
+            "hash": "8bf1aeb5cd5145f1a52864f231a99c07bc17fa55288a45403d46680383fbf20c"
         }
     ],
     "hashType": "sha256"
